@@ -14,7 +14,7 @@ class _RewardPageState extends State<RewardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppAppBar(title: "Recompensas"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
       body: Center(child: Text("Reward Page")),
     );
   }

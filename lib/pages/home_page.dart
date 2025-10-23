@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recicla_ai_grupo_7_frontend/widgets/app_app_bar.dart';
+import 'package:recicla_ai_grupo_7_frontend/widgets/app_bottom_nav_bar.dart';
 import 'package:recicla_ai_grupo_7_frontend/widgets/app_drawer.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,7 +20,8 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppAppBar(title: "Recicla Aí"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
+      bottomNavigationBar: AppBottomNavBar(),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(

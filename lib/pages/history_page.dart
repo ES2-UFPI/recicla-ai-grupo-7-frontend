@@ -14,7 +14,7 @@ class _HistoryPageState extends State<HistoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppAppBar(title: "Histórico"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
       body: Center(child: Text("History Page")),
     );
   }

@@ -14,7 +14,7 @@ class _SchedulePageState extends State<SchedulePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppAppBar(title: "Agendar Coleta"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
       body: Center(child: Text("Schedule Page")),
     );
   }

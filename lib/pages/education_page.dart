@@ -14,7 +14,7 @@ class _EducationPageState extends State<EducationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppAppBar(title: "Educação Ambiental"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
       body: Center(child: Text("Education Page")),
     );
   }

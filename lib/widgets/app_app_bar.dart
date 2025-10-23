@@ -6,14 +6,25 @@ class AppAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final canPop = Navigator.canPop(context);
+
     return AppBar(
+      leading: canPop
+          ? IconButton(
+              icon: const Icon(Icons.arrow_back),
+              color: Theme.of(context).colorScheme.onPrimary,
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            )
+          : null,
       iconTheme: IconThemeData(
         color: Theme.of(context).colorScheme.onPrimary,
       ),
       title: Text(
         title,
         style: TextStyle(
-          color: Theme.of(context).colorScheme.onPrimary, // Dynamically adapts
+          color: Theme.of(context).colorScheme.onPrimary,
           fontSize: 24,
         ),
       ),

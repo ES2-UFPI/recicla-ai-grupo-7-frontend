@@ -16,7 +16,7 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppAppBar(title: "Configurações"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
       body: BlocBuilder<SettingsCubit, Settings>(
         builder: (context, settings) => Center(
           child: ListView(

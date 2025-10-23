@@ -14,7 +14,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppAppBar(title: "Notificações"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
       body: Center(child: Text("Notifications Page")),
     );
   }

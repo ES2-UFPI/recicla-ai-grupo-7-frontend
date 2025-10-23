@@ -7,7 +7,9 @@ import 'package:recicla_ai_grupo_7_frontend/pages/collection_points_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/education_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/history_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/home_page.dart';
+import 'package:recicla_ai_grupo_7_frontend/pages/login_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/notifications_page.dart';
+import 'package:recicla_ai_grupo_7_frontend/pages/register_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/reward_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/schedule_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/settings_page.dart';
@@ -29,6 +31,9 @@ class App extends StatelessWidget {
           themeMode: settings.themeMode,
           routes: {
             '/': (_) => const AppPage(),
+            '/login': (_) => const LoginPage(),
+            '/register': (_) => const RegisterPage(),
+
             '/home': (_) => const HomePage(),
             '/settings': (_) => const SettingsPage(),
 

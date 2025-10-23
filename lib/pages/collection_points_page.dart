@@ -14,7 +14,7 @@ class _CollectionPointsState extends State<CollectionPoints> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppAppBar(title: "Pontos de Coleta"),
-      drawer: AppDrawer(),
+      endDrawer: AppDrawer(),
       body: Center(child: Text("Collection Points")),
     );
   }
