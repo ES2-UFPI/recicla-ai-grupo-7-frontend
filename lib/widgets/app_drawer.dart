@@ -62,12 +62,20 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: Icon(Icons.person),
+            title: Text('Perfil'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed('/profile');
+            },
+          ),
+          ListTile(
             leading: Icon(Icons.logout),
             title: Text('Sair'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed('/');
             },
           ),
+          
         ],
       ),
     );

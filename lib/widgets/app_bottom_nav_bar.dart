@@ -17,6 +17,9 @@ class AppBottomNavBar extends StatelessWidget {
       case 3:
         Navigator.pushNamed(context, '/education');
         break;
+      case 4:
+        Navigator.pushNamed(context, '/profile');
+        break;
     }
   }
 
@@ -43,6 +46,10 @@ class AppBottomNavBar extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.school_rounded),
+          label: '',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person_rounded),
           label: '',
         ),
       ],

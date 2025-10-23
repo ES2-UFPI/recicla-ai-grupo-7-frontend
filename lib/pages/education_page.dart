@@ -193,7 +193,6 @@ class VideoThumbnailCard extends StatelessWidget {
   }
 
   void _openVideo(BuildContext context, Video video) {
-    print('Navegando para: /education/video/${video.id}');
     Navigator.pushNamed(
       context,
       '/education/video/${video.id}',
@@ -223,7 +222,6 @@ class VideoPlayerPage extends StatelessWidget {
         controller: controller,
         showVideoProgressIndicator: true,
         onReady: () {
-          print('Player está pronto para: ${video.title}');
         },
         onEnded: (metaData) {
           Navigator.pop(context);

@@ -8,6 +8,8 @@ import 'package:recicla_ai_grupo_7_frontend/pages/history_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/home_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/login_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/notifications_page.dart';
+import 'package:recicla_ai_grupo_7_frontend/pages/edit_profile_page.dart';
+import 'package:recicla_ai_grupo_7_frontend/pages/profile_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/register_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/reward_page.dart';
 import 'package:recicla_ai_grupo_7_frontend/pages/schedule_page.dart';
@@ -68,7 +70,10 @@ class App extends StatelessWidget {
                 return MaterialPageRoute(builder: (_) => const HomePage());
               case '/settings':
                 return MaterialPageRoute(builder: (_) => const SettingsPage());
-              
+              case '/profile':
+                return MaterialPageRoute(builder: (_) => const ProfilePage());
+              case '/edit-profile':
+                return MaterialPageRoute(builder: (_) => const EditProfilePage());
               case '/schedule':
                 return MaterialPageRoute(builder: (_) => const SchedulePage());
               case '/notifications':
@@ -81,6 +86,7 @@ class App extends StatelessWidget {
                 return MaterialPageRoute(builder: (_) => const HistoryPage());
               case '/education':
                 return MaterialPageRoute(builder: (_) => const EducationPage());
+            
             }
 
             // Rota dinâmica: /education/video/:id

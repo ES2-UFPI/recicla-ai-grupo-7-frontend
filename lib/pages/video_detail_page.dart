@@ -33,7 +33,7 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: theme.colorScheme.background,
+      backgroundColor: theme.colorScheme.surface,
       appBar: AppBar(
         title: Text(widget.video.title),
         backgroundColor: theme.colorScheme.primary,
