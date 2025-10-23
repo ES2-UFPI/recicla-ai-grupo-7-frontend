@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:recicla_ai_grupo_7_frontend/widgets/app_app_bar.dart';
 import 'package:recicla_ai_grupo_7_frontend/widgets/app_drawer.dart';
 
-class CollectionPoints extends StatefulWidget {
-  const CollectionPoints({super.key});
+class CollectionPointsPage extends StatefulWidget {
+  const CollectionPointsPage({super.key});
 
   @override
-  State<CollectionPoints> createState() => _CollectionPointsState();
+  State<CollectionPointsPage> createState() => _CollectionPointsState();
 }
 
-class _CollectionPointsState extends State<CollectionPoints> {
+class _CollectionPointsState extends State<CollectionPointsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
